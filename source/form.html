@@ -18,18 +18,18 @@
           <span class="visually-hidden">Открыть меню.</span>
         </button>
         <div class="main-navigation__wrapper">
-          <ul class="main-navigation__list site-list">
+          <ul class="main-navigation__list site-list list-no-mark">
             <li class="site-list__item">
-              <a href="index.html">главная</a>
+              <a class="main-navigation__link" href="index.html">главная</a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html">Фотографии</a>
+              <a class="main-navigation__link" href="catalog.html">Фотографии</a>
             </li>
             <li class="site-list__item site-list__item--active">
-              <a>конкурс</a>
+              <a class="main-navigation__link">конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="#">html academy</a>
+              <a class="main-navigation__link" href="#">html academy</a>
             </li>
           </ul>
         </div>
@@ -40,10 +40,10 @@
         <h1 class="page-main__title main-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
       <section class="form">
-      <h2 class="form-story">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
+      <h2 class="form__title main-h2">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
         <form class="form__wrapper choice" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="choice__name name no-border">
-            <ul class="choice__name">
+            <ul class="choice__name list-no-mark">
               <li class="name__item">
                 <label class="name__surname label-name-tel-mail">ФАМИЛИЯ:
                   <input class="name__input text-input" type="text" placeholder="Укажите фамилию *" name="surname">
@@ -63,7 +63,7 @@
           </fieldset>
           <fieldset class="choice__progress progress no-border">
             <legend class="progress__name emotion-legend no-border">Ваши безбашенные достижения в путешествии</legend>
-            <ul class="progress__list">
+            <ul class="progress__list list-no-mark">
               <li class="progress__item">
                 <label class="progress__label">
                   <input class="progress__input visually-hidden" type="checkbox" name="selfie" checked>
@@ -109,7 +109,7 @@
             </ul>
           </fieldset>
           <fieldset class="choice__your-contacts your-contacts no-border">
-            <ul class="your-contacts__list">
+            <ul class="your-contacts__list list-no-mark">
               <li class="your-contacts__item">
                 <label class="your-contacts__tel label-name-tel-mail">НОМЕР ТЕЛЕФОНА
                   <input class="your-contacts__input text-input" type="tel" placeholder="Номер, пожалуйста" name="telephone">
@@ -124,7 +124,7 @@
           </fieldset>
           <fieldset class="choice__application application no-border">
             <legend class="application__name emotion-legend">С каким приложением путешествовали?</legend>
-            <ul class="application__list">
+            <ul class="application__list list-no-mark">
               <li class="application__item">
                 <label class="application__label">
                   <input class="application__input visually-hidden" type="radio" name="application" value="iOS" checked>
@@ -156,7 +156,7 @@
           <div class="choice__send send">
             <button class="send__button button-popup-form" type="submit">Отправить форму</button>
             <p class="send__text">
-              <span>*</span> — обязательные поля
+              <span class="send__star">*</span> — обязательные поля
             </p>
           </div>
         </form>
@@ -190,7 +190,7 @@
           </svg>
           <span class="visually-hidden">Давайте дружить.</span>
         </a>
-        <ul class="page-footer__social">
+        <ul class="page-footer__social list-no-mark">
           <li class="social__item">
             <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">
               <svg class="social__twitter" width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
