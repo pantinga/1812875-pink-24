@@ -1,5 +1,4 @@
-.form-story {
-  font-family: "Open Sans", sans-serif;
+.form__title {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -7,25 +6,15 @@
   color: #283645;
 }
 
-.choice__name,
-.choice__progress,
-.choice__your-contacts,
-.choice__application,
-.choice__emotions {
+.form__name {
   border: none;
 }
 
-.choice__name,
-.progress__list,
-.your-contacts__list,
-.application__list {
+.form__name-list {
   list-style: none;
 }
 
-.name__surname,
-.name__first-name,
-.name__middle-name {
-  font-family: "Open Sans", sans-serif;
+.form__first-name {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -33,47 +22,23 @@
   color: #d22856;
 }
 
-.name__input {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 30px;
-  color: #283645;
-}
-
-.progress__name {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #d22856;
-}
-
-.progress__title {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 30px;
-  color: #283645;
-}
-
-.your-contacts__tel,
-.your-contacts__email {
-  font-family: "Open Sans", sans-serif;
+.form__surname {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
-  text-transform: uppercase;
   color: #d22856;
 }
 
-.your-contacts__input {
-  font-family: "Open Sans", sans-serif;
+.form__middle-name {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: #d22856;
+}
+
+.form__middle-name-input {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -81,8 +46,27 @@
   color: #283645;
 }
 
-.application__name {
-  font-family: "Open Sans", sans-serif;
+.form__first-name-input {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+
+.form__surname-input {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+
+.form__progress {
+  border: none;
+}
+
+.form__achievement {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -91,8 +75,11 @@
   color: #d22856;
 }
 
-.application__control-label {
-  font-family: "Open Sans", sans-serif;
+.form__progress-list {
+  list-style: none;
+}
+
+.form__progress-title {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -100,8 +87,53 @@
   color: #283645;
 }
 
-.emotions__label {
-  font-family: "Open Sans", sans-serif;
+.form__your-contacts-list {
+  list-style: none;
+}
+
+.form__your-contacts {
+  border: none;
+}
+
+.form__tel-label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #d22856;
+}
+
+.form__tel-input {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+
+.form__email-label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #d22856;
+}
+
+.form__email-input {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+
+.form__application {
+  border: none;
+}
+
+.form__application-name {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -110,8 +142,11 @@
   color: #d22856;
 }
 
-.emotions__text {
-  font-family: "Open Sans", sans-serif;
+.form__application-list {
+  list-style: none;
+}
+
+.form__application-control-label {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -119,19 +154,40 @@
   color: #283645;
 }
 
-.send__button {
-  font-family: "Open Sans", sans-serif;
+.form__emotions {
+  border: none;
+}
+
+.form__emotions-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #d22856;
+}
+
+.form__textarea {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+
+.form__buttonn-popup {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
-  text-transform: uppercase;
   color: #ffffff;
   background: #2aab6d;
+  border: 2px solid #2aab6d;
+  border-radius: 1px;
+  text-transform: uppercase;
 }
 
-.send__text span {
-  font-family: "Open Sans", sans-serif;
+.form__star {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -140,8 +196,7 @@
   color: #d22856;
 }
 
-.send__text {
-  font-family: "Open Sans", sans-serif;
+.form__text {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
