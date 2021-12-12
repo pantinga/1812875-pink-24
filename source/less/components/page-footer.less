@@ -1,11 +1,42 @@
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__logo-mobile {
+  display: block;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.page-footer__logo-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
 .page-footer__link-pink {
   display: block;
 }
 
 .page-footer__social {
   list-style: none;
+  display: flex;
 }
 
 .page-footer__link {
   display: block;
+}
+
+.page-footer__copyright {
+  display: flex;
 }
