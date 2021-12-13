@@ -1,3 +1,16 @@
+.information {
+  margin: 0 auto;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
+}
+
 .information__question {
   font-style: normal;
   font-weight: 300;
@@ -141,112 +154,5 @@
     background-repeat: no-repeat;
     width: 186px;
     height: 301px;
-  }
-}
-
-.information__effect {
-  display: none;
-
-  @media (min-width: @tablet-width) {
-    display: grid;
-    grid-template-columns: 238px 310px;
-  }
-
-  @media (min-width: @desktop-width) {
-    grid-template-columns: 298px 534px;
-  }
-}
-
-.information__clock {
-  display: none;
-
-  @media (min-width: @tablet-width) {
-    display: block;
-    background-image: url("../img/photo/tablet/timer.svg");
-    background-repeat: no-repeat;
-    width: 238px;
-    height: 276px;
-  }
-
-  @media (min-width: @desktop-width) {
-    background-image: url("../img/photo/desktop/timer.svg");
-    background-repeat: no-repeat;
-    width: 298px;
-    height: 345px;
-  }
-}
-
-.information__24 {
-  display: none;
-
-  @media (min-width: @tablet-width) {
-    display: block;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 96px;
-    line-height: 163px;
-    color: #d22856;
-    margin: 0;
-    padding-top: 73px;
-    padding-left: 60px;
-  }
-
-  @media (min-width: @desktop-width) {
-    font-size: 120px;
-    padding-top: 110px;
-    padding-left: 80px;
-  }
-}
-
-.information__effect-title {
-  display: none;
-
-  @media (min-width: @tablet-width) {
-    display: block;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 36px;
-    color: #000000;
-  }
-
-  @media (min-width: @desktop-width) {
-    line-height: 30px;
-  }
-}
-
-.information__text {
-  display: none;
-
-  @media (min-width: @tablet-width) {
-    display: block;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-    color: #283645;
-  }
-
-  @media (min-width: @desktop-width) {
-    font-size: 18px;
-    line-height: 30px;
-  }
-}
-
-.information__effect-link {
-  display: none;
-
-  @media (min-width: @tablet-width) {
-    display: block;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-    color: #d22856;
-  }
-
-  @media (min-width: @desktop-width) {
-    font-size: 18px;
-    line-height: 30px;
   }
 }
