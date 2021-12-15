@@ -1,13 +1,17 @@
 .information {
   margin: 0 auto;
   width: 320px;
+  background-image: url("../img/photo/mobile/grey-background.png");
+  background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
     width: 660px;
+    background-image: url("../img/photo/tablet/grey-background.png");
   }
 
   @media (min-width: @desktop-width) {
     width: 1200px;
+    background-image: url("../img/photo/desktop/grey-background.png");
   }
 }
 
@@ -17,6 +21,9 @@
   font-size: 24px;
   line-height: 29px;
   color: #283645;
+  margin: 0;
+  margin-top: 46px;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     font-size: 40px;
@@ -36,12 +43,14 @@
   font-size: 24px;
   line-height: 29px;
   color: #283645;
+  margin: 0;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     font-size: 40px;
     line-height: 54px;
-    margin: 0;
     width: 400px;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
@@ -66,10 +75,24 @@
 }
 
 .information__list {
-  width: 310px;
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 310px;
+    margin: 0;
+    text-align: start;
+    margin-left: 42px;
+  }
 
   @media (min-width: @desktop-width) {
-    display: flex;
+    display: grid;
+    width: 892px;
+    grid-template-columns: 252px 252px 252px;
+    grid-column-gap: 68px;
+    text-align: center;
+    margin: 0 0 0 154px;
   }
 }
 
@@ -83,6 +106,8 @@
   @media (min-width: @desktop-width) {
     font-size: 30px;
     line-height: 30px;
+    width: 240px;
+    margin: 0 auto;
   }
 }
 
@@ -93,15 +118,25 @@
   line-height: 24px;
   color: #283645;
   width: 280px;
+  margin: 0;
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
     line-height: 30px;
+    width: 252px;
   }
 }
 
 .information__phones {
   display: flex;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 184px;
+  }
 }
 
 .information__phone-1 {
@@ -122,6 +157,7 @@
     background-repeat: no-repeat;
     width: 186px;
     height: 301px;
+    margin-right: 137px;
   }
 }
 
@@ -138,6 +174,7 @@
     background-repeat: no-repeat;
     width: 186px;
     height: 301px;
+    margin-right: 137px;
   }
 }
 

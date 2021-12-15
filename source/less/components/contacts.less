@@ -11,6 +11,10 @@
   }
 }
 
+.contacts__wrapper {
+  text-align: center;
+}
+
 .contacts__question {
   font-style: normal;
   font-weight: 300;
@@ -70,6 +74,12 @@
 .contacts__item {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .contacts__type {
@@ -109,19 +119,29 @@
 
 .contacts__list {
   list-style: none;
-  display: grid;
+  margin: 0;
+  padding: 0;
 
   @media (min-width: @tablet-width) {
     display: flex;
     width: 544px;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    column-gap: 94px;
+    width: 863px;
+  }
+}
+
+.contacts__address-info {
+  width: 211px;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (min-width: @desktop-width) {
+    margin-top: -58px;
   }
 }
 

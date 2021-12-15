@@ -1,14 +1,27 @@
 .price {
   margin: 0 auto;
   width: 320px;
+  background-image: url("../img/photo/mobile/grey-background-2.png");
+  background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
     width: 660px;
+    background-image: url("../img/photo/tablet/grey-background-2.png");
   }
 
   @media (min-width: @desktop-width) {
     width: 1200px;
+    background-image: url("../img/photo/desktop/grey-background-2.png");
   }
+}
+
+.price__wrapper {
+  overflow: hidden;
+}
+
+.price__list {
+  border-collapse: collapse;
+  margin-top: 114px;
 }
 
 .price__none {
@@ -112,6 +125,7 @@
 
 .price__toggles {
   display: block;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     display: none;

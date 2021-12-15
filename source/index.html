@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header page-header__container">
+    <header class="page-header">
       <a class="page-header__logo">
         <img class="page-header__logo-mobile" src="img/logo/pink.svg" width="74" height="23" alt="Логотип-надпись PINK.">
         <img class="page-header__logo-tablet" src="img/logo/pink-tablet.svg" width="145" height="40" alt="Логотип-надпись PINK.">
@@ -43,8 +43,11 @@
         <div class="applications__wrapper">
           <h1 class="applications__title">Взгляните на жизнь иначе!</h1>
         </div>
-        <div class="applications__intro">
-          <a class="applications__link" href="#">Скачать приложение</a>
+        <div class="applications__background">
+          <div class="applications__intro">
+          <div class="applications__link-wrapper">
+            <a class="applications__link" href="#">Скачать приложение</a>
+          </div>
           <ul class="applications__list links-list">
             <li class="links-list__item">
               <a class="links-list__link" href="#">
@@ -63,6 +66,7 @@
             </li>
           </ul>
         <p class="applications__availability-os">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
         </div>
       </section>
       <section class=information>
@@ -238,11 +242,11 @@
             <b class="contacts__type">Пишите:</b>
             <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
-          <li class="contacts__item">
-            <b class="contacts__type">Приезжайте в гости:</b>
-            <p class="contacts__address">ул. Большая Конюшенная, 19/8</p>
-          </li>
         </ul>
+        <div class="contacts__address-info">
+          <b class="contacts__type">Приезжайте в гости:</b>
+          <p class="contacts__address">ул. Большая Конюшенная, 19/8</p>
+        </div>
         <div class="contacts__map-wrapper">
           <img class="contacts__map-mobile" src="img/photo/mobile/map.jpg" width="320" height="200" alt="Карта с указанием нашего месторасположения.">
           <img class="contacts__map-tablet" src="img/photo/tablet/map.jpg" width="660" height="374" alt="Карта с указанием нашего месторасположения.">
