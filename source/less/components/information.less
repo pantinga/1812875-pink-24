@@ -1,17 +1,27 @@
 .information {
-  margin: 0 auto;
-  width: 320px;
+  width: 100%;
   background-image: url("../img/photo/mobile/grey-background.png");
-  background-repeat: no-repeat;
+  background-size: cover;
 
   @media (min-width: @tablet-width) {
-    width: 660px;
     background-image: url("../img/photo/tablet/grey-background.png");
   }
 
   @media (min-width: @desktop-width) {
-    width: 1200px;
     background-image: url("../img/photo/desktop/grey-background.png");
+  }
+}
+
+.information__page {
+  margin: 0 auto;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
   }
 }
 
