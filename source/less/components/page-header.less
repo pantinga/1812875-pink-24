@@ -1,3 +1,59 @@
 .page-header {
-  background-color: #283645;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+}
+
+.page-header__logo {
+  display: block;
+  height: 66px;
+  cursor: pointer;
+  margin-left: 6%;
+
+  @media (min-width: @tablet-width) {
+    height: 110px;
+    margin-left: 3%;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 2;
+    margin-left: 10.8%;
+  }
+}
+
+.page-header__logo-mobile {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.page-header__logo-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.page-header__logo-desktop {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
 }
