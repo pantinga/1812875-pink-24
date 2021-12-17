@@ -1,20 +1,20 @@
 .applications__wrapper {
   background-image: url("../img/photo/mobile/back-mobile.jpg");
-  /*width: 320px;
-  min-height: 462px;
-  background-repeat: no-repeat;*/
-}
+  background-repeat: no-repeat;
+  height: 462px;
+  background-size: cover;
+  width: 100%;
 
-/*.application__mabile {
-  position: absolute;
-  top: 362px;
-}
 
-.application__mobile-photo {
-  position: absolute;
-  bottom: 364px;
-  left: 104px;
-}*/
+  @media (min-width: @tablet-width) {
+    height: 545px;
+    background-image: url("../img/photo/tablet/back-tablet.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/photo/desktop/back-desktop.jpg");
+  }
+}
 
 .applications__title {
   width: 280px;
@@ -25,10 +25,47 @@
   line-height: 29px;
   color: #ffffff;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    line-height: 48px;
+    width: 200px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+    width: 220px;
+  }
+}
+
+.applications__background {
+  background-color: #1d2631;
+
+  @media (min-width: @tablet-width) {
+    height: 0;
+  }
 }
 
 .applications__intro {
-  background-color: #1d2631;
+  margin: 0 auto;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+    position: relative;
+    bottom: 400px;
+    width: 660px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: transparent;
+    width: 1200px;
+  }
+}
+
+.applications__link-wrapper {
+  padding-top: 45px;
 }
 
 .applications__link {
@@ -38,6 +75,15 @@
   font-size: 18px;
   line-height: 18px;
   text-decoration: none;
+  outline: 3px solid #ffffff;
+  border-radius: 20px;
+  outline-offset: 11px;
+  padding: 1px 25px 2px;
+  margin-left: 34px;
+
+  @media (min-width: @desktop-width) {
+    font-size: 21px;
+  }
 }
 
 .applications__list {
@@ -51,4 +97,13 @@
   font-size: 14px;
   line-height: 24px;
   color: #ffffff;
+  width: 280px;
+  padding: 0 20px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    width: 300px;
+  }
 }

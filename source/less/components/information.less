@@ -1,9 +1,50 @@
+.information {
+  width: 100%;
+  background-image: url("../img/photo/mobile/grey-background.png");
+  background-size: cover;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/photo/tablet/grey-background.png");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/photo/desktop/grey-background.png");
+  }
+}
+
+.information__page {
+  margin: 0 auto;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
+}
+
 .information__question {
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
   color: #283645;
+  margin: 0;
+  margin-top: 46px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    line-height: 54px;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
 .information__answer {
@@ -12,6 +53,57 @@
   font-size: 24px;
   line-height: 29px;
   color: #283645;
+  margin: 0;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    line-height: 54px;
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+    width: 430px;
+  }
+}
+
+.information__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column-reverse;
+  }
+}
+
+.information__list {
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 310px;
+    margin: 0;
+    text-align: start;
+    margin-left: 42px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    width: 892px;
+    grid-template-columns: 252px 252px 252px;
+    grid-column-gap: 68px;
+    text-align: center;
+    margin: 0 0 0 154px;
+  }
 }
 
 .information__term {
@@ -20,6 +112,13 @@
   font-size: 18px;
   line-height: 24px;
   color: #000000;
+
+  @media (min-width: @desktop-width) {
+    font-size: 30px;
+    line-height: 30px;
+    width: 240px;
+    margin: 0 auto;
+  }
 }
 
 .information__description {
@@ -28,4 +127,79 @@
   font-size: 14px;
   line-height: 24px;
   color: #283645;
+  width: 280px;
+  margin: 0;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    width: 252px;
+  }
+}
+
+.information__phones {
+  display: flex;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 184px;
+  }
+}
+
+.information__phone-1 {
+  background-image: url("../img/photo/mobile/iphone-3.png");
+  background-repeat: no-repeat;
+  width: 157px;
+  height: 277px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/photo/tablet/iphone-3.png");
+    background-repeat: no-repeat;
+    width: 268px;
+    height: 481px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/photo/desktop/iphone.png");
+    background-repeat: no-repeat;
+    width: 186px;
+    height: 301px;
+    margin-right: 137px;
+  }
+}
+
+.information__phone-2 {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    background-image: url("../img/photo/desktop/iphone.png");
+    background-repeat: no-repeat;
+    width: 186px;
+    height: 301px;
+    margin-right: 137px;
+  }
+}
+
+.information__phone-3 {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    background-image: url("../img/photo/desktop/iphone.png");
+    background-repeat: no-repeat;
+    width: 186px;
+    height: 301px;
+  }
 }

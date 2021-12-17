@@ -1,5 +1,82 @@
-.price__table-title {
+.price {
+  width: 100%;
+  background-image: url("../img/photo/mobile/grey-background-2.png");
+  background-size: cover;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/photo/tablet/grey-background-2.png");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/photo/desktop/grey-background-2.png");
+  }
+}
+
+.price__page {
+  margin: 0 auto;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
+}
+
+.price__wrapper {
+  overflow: hidden;
+}
+
+.price__list {
+  border-collapse: collapse;
+  margin-top: 114px;
+}
+
+.price__none {
+  background-color: transparent;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.price__base {
   background-color: #283645;
+}
+
+.price__standart {
+  background-color: #283645;
+}
+
+.price__unlim {
+  background-color: #283645;
+}
+
+.price__cell-1-1 {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.price__cell-2-1 {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.price__cell-3-1 {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
 
 .price__type {
@@ -8,6 +85,10 @@
   font-size: 16px;
   line-height: 30px;
   color: #ffffff;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .price__cost {
@@ -16,6 +97,10 @@
   font-size: 18px;
   line-height: 30px;
   color: #ffffff;
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+  }
 }
 
 .price__hit {
@@ -34,4 +119,25 @@
   line-height: 30px;
   text-transform: uppercase;
   color: #283645;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.price__visible {
+  display: table;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.price__toggles {
+  display: block;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
