@@ -42,6 +42,7 @@
       </div>
       <section class="form">
       <h2 class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
+      <h3 class="form__title-add">Пожалуйста, заполните форму ниже:</h3>
         <form class="form__wrapper" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="form__name">
             <ul class="form__name-list">
@@ -62,53 +63,55 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__progress">
-            <legend class="form__achievement">Ваши безбашенные достижения в путешествии</legend>
-            <ul class="form__progress-list">
-              <li class="form__progress-item">
-                <label class="form__progress-label">
-                  <input class="form__progress-input visually-hidden" type="checkbox" name="selfie" checked>
-                  <span class="form__progress-mark"></span>
-                  <span class="form__progress-title">Сделал селфи с акулой</span>
-                </label>
-              </li>
-              <li class="form__progress-item">
-                <label class="form__progress-label">
-                  <input class="form__progress-input visually-hidden" type="checkbox" name="burned" checked>
-                  <span class="form__progress-mark"></span>
-                  <span class="form__progress-title">Обгорел на пляже</span>
-                </label>
-              </li>
-              <li class="form__progress-item">
-                <label class="form__progress-label">
-                  <input class="form__progress-input visually-hidden" type="checkbox" name="Chuck Norris">
-                  <span class="form__progress-mark"></span>
-                  <span class="form__progress-title">Видел Чака Норриса</span>
-                </label>
-              </li>
-              <li class="form__progress-item">
-                <label class="form__progress-label">
-                  <input class="form__progress-input visually-hidden" type="checkbox" name="souvenirs">
-                  <span class="form__progress-mark"></span>
-                  <span class="form__progress-title">Накупил сувениров</span>
-                </label>
-              </li>
-              <li class="form__progress-item">
-                <label class="form__progress-label">
-                  <input class="form__progress-input visually-hidden" type="checkbox" name="tower" checked>
-                  <span class="form__progress-mark"></span>
-                  <span class="form__progress-title">Удержал башню</span>
-                </label>
-              </li>
-              <li class="form__progress-item">
-                <label class="form__progress-label">
-                  <input class="form__progress-input visually-hidden" type="checkbox" name="defeated">
-                  <span class="form__progress-mark"></span>
-                  <span class="form__progress-title">Разгромил отель</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+          <div class="form__progress-wrapper">
+            <fieldset class="form__progress">
+              <legend class="form__achievement">Ваши безбашенные достижения в путешествии</legend>
+              <ul class="form__progress-list">
+                <li class="form__progress-item">
+                  <label class="form__progress-label">
+                    <input class="form__progress-input visually-hidden" type="checkbox" name="selfie" checked>
+                    <span class="form__progress-mark"></span>
+                    <span class="form__progress-title">Сделал селфи с акулой</span>
+                  </label>
+                </li>
+                <li class="form__progress-item">
+                  <label class="form__progress-label">
+                    <input class="form__progress-input visually-hidden" type="checkbox" name="burned" checked>
+                    <span class="form__progress-mark"></span>
+                    <span class="form__progress-title">Обгорел на пляже</span>
+                  </label>
+                </li>
+                <li class="form__progress-item">
+                  <label class="form__progress-label">
+                    <input class="form__progress-input visually-hidden" type="checkbox" name="Chuck Norris">
+                    <span class="form__progress-mark"></span>
+                    <span class="form__progress-title">Видел Чака Норриса</span>
+                  </label>
+                </li>
+                <li class="form__progress-item">
+                  <label class="form__progress-label">
+                    <input class="form__progress-input visually-hidden" type="checkbox" name="souvenirs">
+                    <span class="form__progress-mark"></span>
+                    <span class="form__progress-title">Накупил сувениров</span>
+                  </label>
+                </li>
+                <li class="form__progress-item">
+                  <label class="form__progress-label">
+                    <input class="form__progress-input visually-hidden" type="checkbox" name="tower" checked>
+                    <span class="form__progress-mark"></span>
+                    <span class="form__progress-title">Удержал башню</span>
+                  </label>
+                </li>
+                <li class="form__progress-item">
+                  <label class="form__progress-label">
+                    <input class="form__progress-input visually-hidden" type="checkbox" name="defeated">
+                    <span class="form__progress-mark"></span>
+                    <span class="form__progress-title">Разгромил отель</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
           <fieldset class="form__your-contacts">
             <ul class="form__your-contacts-list">
               <li class="form__your-contacts-item">
@@ -123,32 +126,34 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__application">
-            <legend class="form__application-name">С каким приложением путешествовали?</legend>
-            <ul class="form__application-list">
-              <li class="form__application-item">
-                <label class="form__application-label">
-                  <input class="form__application-input visually-hidden" type="radio" name="application" value="iOS" checked>
-                  <span class="form__application-radio"></span>
-                  <span class="form__application-control-label">Pink для iOS</span>
-                </label>
-              </li>
-              <li class="form__application-label">
-                <label class="form__application-label">
-                  <input class="form__application-input visually-hidden" type="radio" name="application" value="Android">
-                  <span class="form__application-radio"></span>
-                  <span class="form__application-control-label">Pink на Android</span>
-                </label>
-              </li>
-              <li class="form__application-label">
-                <label class="form__application-label">
-                  <input class="form__application-input visually-hidden" type="radio" name="application" value="Windows">
-                  <span class="form__application-radio"></span>
-                  <span class="form__application-control-label">Windows Phone</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+          <div class="form__application-wrapper">
+            <fieldset class="form__application">
+              <legend class="form__application-name">С каким приложением путешествовали?</legend>
+              <ul class="form__application-list">
+                <li class="form__application-item">
+                  <label class="form__application-label">
+                    <input class="form__application-input visually-hidden" type="radio" name="application" value="iOS" checked>
+                    <span class="form__application-radio"></span>
+                    <span class="form__application-control-label">Pink для iOS</span>
+                  </label>
+                </li>
+                <li class="form__application-label">
+                  <label class="form__application-label">
+                    <input class="form__application-input visually-hidden" type="radio" name="application" value="Android">
+                    <span class="form__application-radio"></span>
+                    <span class="form__application-control-label">Pink на Android</span>
+                  </label>
+                </li>
+                <li class="form__application-label">
+                  <label class="form__application-label">
+                    <input class="form__application-input visually-hidden" type="radio" name="application" value="Windows">
+                    <span class="form__application-radio"></span>
+                    <span class="form__application-control-label">Windows Phone</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
           <fieldset class="form__emotions">
             <p class="form__emotions-title">ОПИШИТЕ СВОИ ЭМОЦИИ</p>
             <label class="form__label-textarea visually-hidden" for="data">ОПИШИТЕ СВОИ ЭМОЦИИ.</label>
@@ -172,7 +177,7 @@
       <section class="popup popup--success">
         <div class="popup__wrapper">
           <h2 class="popup__title">Ваша заявка отправлена</h2>
-          <p class="popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+          <p class="popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и<br> оповестим вас.</p>
         </div>
         <div class="popup__background">
           <button class="popup__button" type="button">ЗАКРЫТЬ ОКНО</button>
