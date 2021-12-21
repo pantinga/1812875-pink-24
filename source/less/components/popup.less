@@ -13,6 +13,11 @@
   width: 280px;
   margin: 0 auto;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    width: 320px;
+  }
 }
 
 .popup__title {
@@ -22,6 +27,13 @@
   line-height: 24px;
   color: #000000;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+    width: 250px;
+    margin: 0 auto;
+  }
 }
 
 .popup__button {
@@ -36,6 +48,10 @@
   text-transform: uppercase;
   width: 276px;
   height: 59px;
+
+  @media (min-width: @tablet-width) {
+    width: 296px;
+  }
 }
 
 .popup__background {
@@ -64,4 +80,12 @@
 
 .photos__like-button {
   border: none;
+}
+
+.popup__text-br {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
