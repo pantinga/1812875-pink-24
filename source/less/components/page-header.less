@@ -3,23 +3,43 @@
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.3);
   color: #ffffff;
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    width: 100%;
+  }
+}
+
+.page-header__container-logo {
+  width: 320px;
+  margin: 0 auto;
+  padding: 20px 0 21px 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+    padding: 27px 0 43px 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    padding: 27px 0 43px 130px;
+  }
+}
+
+.page-header__container-nav {
+  background-color: #283645;
+
+  @media (min-width: @desktop-width) {
+    background-color: transparent;
+    position: relative;
+    bottom: 65px;
+    height: 0;
+  }
 }
 
 .page-header__logo {
   display: block;
-  height: 66px;
   cursor: pointer;
-  margin-left: 6%;
-
-  @media (min-width: @tablet-width) {
-    height: 110px;
-    margin-left: 3%;
-  }
-
-  @media (min-width: @desktop-width) {
-    order: 2;
-    margin-left: 10.8%;
-  }
 }
 
 .page-header__logo-mobile {

@@ -1,6 +1,7 @@
-/*.main-navigation {
+.main-navigation {
   width: 320px;
   margin: 0 auto;
+  margin-top: -28px;
 
   @media (min-width: @tablet-width) {
     width: 660px;
@@ -8,8 +9,9 @@
 
   @media (min-width: @desktop-width) {
     width: 1200px;
+    margin-top: 0;
   }
-}*/
+}
 
 .main-navigation__list {
   list-style: none;
@@ -17,13 +19,14 @@
   background-color: #283645;
   display: flex;
   flex-direction: column;
+  padding: 0;
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 72px 109px 72px 131px;
     grid-column-gap: 79px;
-    padding-left: 37.5%;
     display: grid;
     background-color: transparent;
+    padding-left: 450px;
   }
 }
 
@@ -47,6 +50,15 @@
 
 .main-navigation__toggle {
   border: none;
+  position: relative;
+  left: 200px;
+  bottom: 15px;
+  background-color: transparent;
+
+  @media (min-width: @tablet-width) {
+    left: 600px;
+    bottom: 40px;
+  }
 
   @media (min-width: @desktop-width) {
     display: none;

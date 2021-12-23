@@ -14,10 +14,16 @@
 .page-footer__wrapper {
   display: flex;
   flex-direction: column;
+  padding: 0 80px;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 130px;
   }
 }
 
