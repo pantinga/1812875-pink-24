@@ -1,80 +1,81 @@
 .effect {
-  background-color: @base-bg-color;
+  display: none;
 
   @media (min-width: @tablet-width) {
-    padding-left: 20px;
+    display: block;
+    background-color: @base-bg-color;
+    margin-top: 54px;
   }
 
   @media (min-width: @desktop-width) {
     background-color: #f2f2f2;
-    padding-left: 131px;
+    margin: 0;
+    padding-top: 33px;
+    padding-bottom: 67px;
   }
 }
 
-.effect__inform {
-  display: none;
-
+.effect__container {
   @media (min-width: @tablet-width) {
+    width: 620px;
+    padding: 0 20px;
+    display: flex;
     margin: 0 auto;
-    display: grid;
-    width: 660px;
-    grid-template-columns: 238px 310px;
-    grid-column-gap: 72px;
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 298px 534px;
-    width: 1200px;
-    grid-column-gap: 71px;
-  }
-}
-
-.effect__clock {
-  display: none;
-
-  @media (min-width: @tablet-width) {
-    display: block;
-    background-image: url("../img/photo/tablet/timer.svg");
-    background-repeat: no-repeat;
-    width: 238px;
-    height: 276px;
-  }
-
-  @media (min-width: @desktop-width) {
-    background-image: url("../img/photo/desktop/timer.svg");
-    background-repeat: no-repeat;
-    width: 298px;
-    height: 345px;
+    width: 940px;
+    padding-left: 130px;
+    padding-right: 130px;
   }
 }
 
 .effect__24 {
-  display: none;
-
   @media (min-width: @tablet-width) {
-    display: block;
     font-style: normal;
     font-weight: bold;
     font-size: 96px;
     line-height: 163px;
     color: #d22856;
     margin: 0;
-    padding-top: 73px;
-    padding-left: 60px;
+    position: absolute;
+    left: 65px;
+    top: 72px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 120px;
-    padding-top: 110px;
-    padding-left: 80px;
+    left: 81px;
+    top: 111px;
+  }
+}
+
+.effect__clock {
+  position: relative;
+  margin-right: 70px;
+}
+
+.effect__circle-tablet {
+  position: absolute;
+  left: 19px;
+  top: 56px;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.effect__wrapper {
+  margin-top: 12px;
+  margin-left: 2px;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 65px;
   }
 }
 
 .effect__title {
-  display: none;
-
   @media (min-width: @tablet-width) {
-    display: block;
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
@@ -84,30 +85,45 @@
 
   @media (min-width: @desktop-width) {
     line-height: 30px;
+    margin-bottom: 45px;
+  }
+}
+
+.effect__br {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.effect__br-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
   }
 }
 
 .effect__text {
-  display: none;
-
   @media (min-width: @tablet-width) {
-    display: block;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
     color: #283645;
+    margin-top: -20px;
+    width: 300px;
+    margin-bottom: 10px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
     line-height: 30px;
+    width: 534px;
+    margin-bottom: 31px;
   }
 }
 
 .effect__link {
-  display: none;
-
   @media (min-width: @tablet-width) {
     display: block;
     font-style: normal;
@@ -120,5 +136,30 @@
   @media (min-width: @desktop-width) {
     font-size: 18px;
     line-height: 30px;
+  }
+}
+
+.effect__clock-tablet {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.effect__clock-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.effect__circle-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    position: absolute;
+    left: 24px;
+    top: 70px;
   }
 }

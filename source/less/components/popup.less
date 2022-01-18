@@ -1,9 +1,23 @@
+.popup__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .popup__text {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   color: #283645;
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    width: 320px;
+  }
 }
 
 .popup__title {
@@ -12,6 +26,14 @@
   font-size: 18px;
   line-height: 24px;
   color: #000000;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+    width: 250px;
+    margin: 0 auto;
+  }
 }
 
 .popup__button {
@@ -24,10 +46,18 @@
   border: 2px solid #2aab6d;
   border-radius: 1px;
   text-transform: uppercase;
+  width: 276px;
+  height: 59px;
+
+  @media (min-width: @tablet-width) {
+    width: 296px;
+  }
 }
 
 .popup__background {
   background: #f2f2f2;
+  text-align: center;
+  padding: 52px 0;
 }
 
 .photos__reviews-time {
@@ -50,4 +80,48 @@
 
 .photos__like-button {
   border: none;
+}
+
+.popup__text-br {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.popup--failure {
+  display: block;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  border-radius: 1px;
+
+  @media (min-width: @tablet-width) {
+    width: 460px;
+    height: 363px;
+    border-radius: 5px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 780px;
+    height: 377px;
+  }
+}
+
+.popup--success {
+  display: block;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  border-radius: 1px;
+
+  @media (min-width: @tablet-width) {
+    width: 460px;
+    height: 432px;
+    border-radius: 5px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 780px;
+    height: 377px;
+  }
 }

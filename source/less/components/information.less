@@ -1,27 +1,44 @@
-.information {
-  width: 100%;
+.information__container-1 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+    margin-top: 47px;
+    margin-bottom: 19px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    padding-left: 130px;
+    padding-right: 130px;
+    margin-top: 62px;
+  }
+}
+
+.information__wrapper-text {
+  margin-bottom: -12px;
+}
+
+.information__container-2 {
   background-image: url("../img/photo/mobile/grey-background.png");
   background-size: cover;
+  background-repeat: no-repeat;
+  height: 829px;
+  overflow: hidden;
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/photo/tablet/grey-background.png");
+    height: 509px;
   }
 
   @media (min-width: @desktop-width) {
     background-image: url("../img/photo/desktop/grey-background.png");
-  }
-}
-
-.information__page {
-  margin: 0 auto;
-  width: 320px;
-
-  @media (min-width: @tablet-width) {
-    width: 660px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 1200px;
+    margin-top: 63px;
+    height: 600px;
   }
 }
 
@@ -32,8 +49,9 @@
   line-height: 29px;
   color: #283645;
   margin: 0;
-  margin-top: 46px;
   text-align: center;
+  margin-top: 40px;
+  margin-bottom: 29px;
 
   @media (min-width: @tablet-width) {
     font-size: 40px;
@@ -55,6 +73,7 @@
   color: #283645;
   margin: 0;
   text-align: center;
+  margin-top: 17px;
 
   @media (min-width: @tablet-width) {
     font-size: 40px;
@@ -71,16 +90,21 @@
 }
 
 .information__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
 
   @media (min-width: @tablet-width) {
     flex-direction: row-reverse;
     justify-content: flex-end;
+    width: 620px;
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: column-reverse;
+    width: 892px;
   }
 }
 
@@ -88,12 +112,16 @@
   width: 280px;
   margin: 0 auto;
   text-align: center;
+  margin-top: 107px;
+  list-style: none;
+  padding: 0;
 
   @media (min-width: @tablet-width) {
     width: 310px;
     margin: 0;
     text-align: start;
-    margin-left: 42px;
+    margin-left: 41px;
+    margin-top: 80px;
   }
 
   @media (min-width: @desktop-width) {
@@ -102,7 +130,17 @@
     grid-template-columns: 252px 252px 252px;
     grid-column-gap: 68px;
     text-align: center;
-    margin: 0 0 0 154px;
+    margin: 0 auto;
+  }
+}
+
+.information__item {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 8px;
   }
 }
 
@@ -112,12 +150,14 @@
   font-size: 18px;
   line-height: 24px;
   color: #000000;
+  margin-bottom: 0;
 
   @media (min-width: @desktop-width) {
     font-size: 30px;
     line-height: 30px;
     width: 240px;
     margin: 0 auto;
+    margin-left: 6px;
   }
 }
 
@@ -129,77 +169,154 @@
   color: #283645;
   width: 280px;
   margin: 0;
+  margin-top: 12px;
+  margin-bottom: 31px;
+
+  @media (min-width: @tablet-width) {
+    width: 310px;
+  }
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
     line-height: 30px;
-    width: 252px;
+    width: 245px;
+    margin-top: 23px;
+    margin-left: 4px;
   }
 }
 
-.information__phones {
-  display: flex;
-
-  @media (min-width: @tablet-width) {
-    margin-left: 20px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-left: 184px;
-  }
-}
-
-.information__phone-1 {
-  background-image: url("../img/photo/mobile/iphone-3.png");
-  background-repeat: no-repeat;
-  width: 157px;
-  height: 277px;
-
-  @media (min-width: @tablet-width) {
-    background-image: url("../img/photo/tablet/iphone-3.png");
-    background-repeat: no-repeat;
-    width: 268px;
-    height: 481px;
-  }
-
-  @media (min-width: @desktop-width) {
-    background-image: url("../img/photo/desktop/iphone.png");
-    background-repeat: no-repeat;
-    width: 186px;
-    height: 301px;
-    margin-right: 137px;
-  }
-}
-
-.information__phone-2 {
+.information__description-br {
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.information__phone-mobile {
+  margin-left: 62px;
+  margin-top: 10px;
 
   @media (min-width: @tablet-width) {
     display: none;
   }
-
-  @media (min-width: @desktop-width) {
-    display: block;
-    background-image: url("../img/photo/desktop/iphone.png");
-    background-repeat: no-repeat;
-    width: 186px;
-    height: 301px;
-    margin-right: 137px;
-  }
 }
 
-.information__phone-3 {
-  display: none;
+.information__smile-mobile {
+  margin-top: -285px;
+  margin-left: 70px;
 
   @media (min-width: @tablet-width) {
     display: none;
   }
+}
+
+.information__phone-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-left: -253px;
+    margin-top: 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.information__smile-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-left: 13px;
+    margin-top: 87px;
+    height: 425px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.information__phone-desktop {
+  display: none;
 
   @media (min-width: @desktop-width) {
     display: block;
-    background-image: url("../img/photo/desktop/iphone.png");
-    background-repeat: no-repeat;
-    width: 186px;
+  }
+}
+
+.information__grey-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    margin-top: -342px;
+    margin-left: 9px;
+  }
+}
+
+.information__pink-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    margin-top: -342px;
+    margin-left: 9px;
+  }
+}
+
+.information__smile-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    margin-top: -342px;
+    margin-left: 9px;
+  }
+}
+
+.information__item-phone-1 {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    overflow: hidden;
     height: 301px;
+    margin-left: 29px;
+    margin-top: 6px;
+    margin-bottom: 55px;
+  }
+}
+
+.information__item-phone-2 {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    overflow: hidden;
+    height: 301px;
+    margin-left: 32px;
+    margin-top: 6px;
+    margin-bottom: 55px;
+  }
+}
+
+.information__item-phone-3 {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    overflow: hidden;
+    height: 301px;
+    margin-left: 35px;
+    margin-top: 6px;
+    margin-bottom: 55px;
   }
 }

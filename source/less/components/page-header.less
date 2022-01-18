@@ -1,24 +1,45 @@
 .page-header {
-  display: flex;
-  flex-direction: column;
+  z-index: 1;
+  position: relative;
   background-color: rgba(0, 0, 0, 0.3);
   color: #ffffff;
 }
 
+.page-header__container {
+  background-color: transparent;
+
+  @media (min-width: @desktop-width) {
+    box-sizing: border-box;
+    width: 1200px;
+    padding-left: 131px;
+    padding-right: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+}
+
+.page-header__container-color {
+  background-color: #283645;
+}
+
 .page-header__logo {
   display: block;
-  height: 66px;
   cursor: pointer;
-  margin-left: 6%;
+  margin-left: 20px;
+  padding-top: 23px;
+  padding-bottom: 22px;
+  width: 74px;
 
   @media (min-width: @tablet-width) {
-    height: 110px;
-    margin-left: 3%;
+    width: 145px;
+    padding-top: 27px;
+    padding-bottom: 43px;
   }
 
   @media (min-width: @desktop-width) {
-    order: 2;
-    margin-left: 10.8%;
+    margin-right: 173px;
+    margin-left: 0;
   }
 }
 

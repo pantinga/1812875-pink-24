@@ -1,0 +1,45 @@
+.scale__bar1 {
+  width: 240px;
+  height: 2px;
+  background: #283645;
+
+  @media (min-width: @tablet-width) {
+    width: 202px;
+    margin-bottom: 70px;
+    margin-top: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 90px;
+    margin-top: 20px;
+  }
+}
+
+.scale__bar2 {
+  width: 240px;
+  height: 2px;
+  background: #283645;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 202px;
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 90px;
+  }
+}
+
+.scale__bar3 {
+  display: none;
+  width: 240px;
+  height: 2px;
+  background: #283645;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 202px;
+  }
+}

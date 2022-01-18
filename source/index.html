@@ -8,22 +8,19 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-mobile" src="img/logo/pink.svg" width="74" height="23" alt="Логотип-надпись PINK.">
-        <img class="page-header__logo-tablet" src="img/logo/pink-tablet.svg" width="145" height="40" alt="Логотип-надпись PINK.">
-        <img class="page-header__logo-desktop" src="img/logo/pink-desktop.svg" width="147" height="40" alt="Логотип-надпись PINK.">
-      </a>
-      <nav class="main-navigation">
-        <button class="main-navigation__toggle" type="button">
-          <svg width="50" height="24" viewBox="0 0 50 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1.13659 0.00020839C0.986512 -0.00251551 0.837358 0.0214885 0.698091 0.0707781C0.558823 0.120068 0.432317 0.193625 0.326173 0.28703C0.22003 0.380436 0.136442 0.49176 0.0804303 0.614315C0.024419 0.73687 -0.00285856 0.868124 0.000236809 1.00019V3.00016C0.000236809 3.26537 0.119959 3.51972 0.333067 3.70725C0.546174 3.89478 0.83521 4.00014 1.13659 4.00014H48.8634C49.0135 4.00286 49.1626 3.97886 49.3019 3.92957C49.4412 3.88028 49.5677 3.80672 49.6738 3.71332C49.78 3.61991 49.8636 3.50859 49.9196 3.38603C49.9756 3.26348 50.0029 3.13222 49.9998 3.00016V1.00019C49.9998 0.734979 49.88 0.48063 49.6669 0.293097C49.4538 0.105563 49.1648 0.00020839 48.8634 0.00020839H1.13659ZM1.13659 10C0.986512 9.99731 0.837358 10.0213 0.698091 10.0706C0.558823 10.1199 0.432317 10.1935 0.326173 10.2869C0.22003 10.3803 0.136442 10.4916 0.0804303 10.6141C0.024419 10.7367 -0.00285856 10.868 0.000236809 11V13C0.000236809 13.2652 0.119959 13.5195 0.333067 13.7071C0.546174 13.8946 0.83521 14 1.13659 14H48.8634C49.0135 14.0027 49.1626 13.9787 49.3019 13.9294C49.4412 13.8801 49.5677 13.8065 49.6738 13.7131C49.78 13.6197 49.8636 13.5084 49.9196 13.3859C49.9756 13.2633 50.0029 13.132 49.9998 13V11C49.9998 10.7348 49.88 10.4805 49.6669 10.2929C49.4538 10.1054 49.1648 10 48.8634 10H1.13659ZM1.13659 19.9999C0.986512 19.9971 0.837358 20.0211 0.698091 20.0704C0.558823 20.1197 0.432317 20.1933 0.326173 20.2867C0.22003 20.3801 0.136442 20.4914 0.0804303 20.614C0.024419 20.7365 -0.00285856 20.8678 0.000236809 20.9998V22.9998C0.000236809 23.265 0.119959 23.5194 0.333067 23.7069C0.546174 23.8944 0.83521 23.9998 1.13659 23.9998H48.8634C49.0135 24.0025 49.1626 23.9785 49.3019 23.9292C49.4412 23.8799 49.5677 23.8064 49.6738 23.713C49.78 23.6196 49.8636 23.5082 49.9196 23.3857C49.9756 23.2631 50.0029 23.1319 49.9998 22.9998V20.9998C49.9998 20.7346 49.88 20.4803 49.6669 20.2927C49.4538 20.1052 49.1648 19.9999 48.8634 19.9999H1.13659Z" fill="white"/>
-          </svg>
-          <span class="visually-hidden">Открыть меню.</span>
-        </button>
-        <div class="main-navigation__wrapper">
-          <ul class="main-navigation__list">
+      <div class="page-header__container">
+        <a class="page-header__logo">
+          <img class="page-header__logo-mobile" src="img/logo/pink.svg" width="74" height="23" alt="Логотип-надпись PINK.">
+          <img class="page-header__logo-tablet" src="img/logo/pink-tablet.svg" width="145" height="40" alt="Логотип-надпись PINK.">
+          <img class="page-header__logo-desktop" src="img/logo/pink-desktop.svg" width="147" height="40" alt="Логотип-надпись PINK.">
+        </a>
+        <nav class="main-navigation toggle-open">
+          <button class="main-navigation__toggle" type="button">
+            <span class="visually-hidden">Открыть меню.</span>
+          </button>
+          <ul class="main-navigation__list main-navigation__list-none">
             <li class="main-navigation__item">
-              <a class="main-navigation__link">Главная</a>
+              <a class="main-navigation__link main-navigation__link--active">Главная</a>
             </li>
             <li class="main-navigation__item">
               <a class="main-navigation__link" href="catalog.html">Фотографии</a>
@@ -35,143 +32,171 @@
               <a class="main-navigation__link" href="#">HTML Academy</a>
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
     <main class="page-main">
       <section class="applications">
-        <div class="applications__wrapper">
-          <h1 class="applications__title">Взгляните на жизнь иначе!</h1>
-        </div>
         <div class="applications__background">
-          <div class="applications__intro">
+          <div class="applications__wrapper-phone">
+            <h1 class="applications__title">Взгляните на жизнь иначе!</h1>
+            <img class="applications__phone-mobile-picture" src="img/photo/mobile/screen.jpg" width="111" height="197" alt="Розовый театр.">
+            <img class="applications__phone-mobile" src="img/photo/mobile/phone.png" width="320" height="286" alt="Телефон в руке.">
+            <img class="applications__phone-tablet-picture" src="img/photo/tablet/screen.jpg" width="195" height="346" alt="Розовый театр.">
+            <img class="applications__phone-tablet" src="img/photo/tablet/phone.png" width="660" height="545" alt="Телефон в руке.">
+            <img class="applications__phone-desktop-picture" src="img/photo/tablet/screen.jpg" width="230" height="408" alt="Розовый театр.">
+            <img class="applications__phone-desktop" src="img/photo/desktop/phone.png" width="1050" height="645" alt="Телефон в руке.">
+          </div>
+        </div>
+        <div class="applications__wrapper">
           <div class="applications__link-wrapper">
             <a class="applications__link" href="#">Скачать приложение</a>
           </div>
           <ul class="applications__list links-list">
             <li class="links-list__item">
-              <a class="links-list__link" href="#">
+              <a class="links-list__link-apple" href="#">
                 <img class="links-list__logo" src="img/logo/apple-logo.svg" width="47" height="56" alt="Логотип Apple.">
               </a>
             </li>
             <li class="links-list__item">
-              <a class="links-list__link" href="#">
+              <a class="links-list__link-android" href="#">
                 <img class="links-list__logo" src="img/logo/android-logo.svg" width="43" height="47" alt="Логотип Android.">
               </a>
             </li>
             <li class="links-list__item">
-              <a class="links-list__link" href="#">
+              <a class="links-list__link-microsoft" href="#">
                 <img class="links-list__logo" src="img/logo/microsoft-logo.svg" width="44" height="41" alt="Логотип Windows.">
               </a>
             </li>
           </ul>
-        <p class="applications__availability-os">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-        </div>
+          <p class="applications__availability-os">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </section>
-      <section class=information>
-        <div class="information__page">
-          <h2 class=visually-hidden>Наши предлжения.</h2>
+      <section class="information">
+        <div class="information__container-1">
+          <h2 class="visually-hidden">Наши предложения.</h2>
           <div class="information__wrapper-text">
             <p class="information__question">Устали от серости мегаполиса?</p>
             <p class="information__answer">Нам есть, что вам предложить!</p>
           </div>
+        </div>
+        <div class="information__container-2">
           <div class="information__wrapper">
-            <dl class="information__list">
-              <div class="information__item">
-                <dt class="information__term">Поднимает настроение</dt>
-                <dd class="information__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</dd>
-              </div>
-              <div class="information__item">
-                <dt class="information__term">Меняет мир вокруг</dt>
-                <dd class="information__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</dd>
-              </div>
-              <div class="information__item">
-                <dt class="information__term">Заводит новых друзей</dt>
-                <dd class="information__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</dd>
-              </div>
-            </dl>
-            <div class="information__phones">
-              <div class="information__phone-1">
-                <div class="information__item information__item--black-white"></div>
-                <div class="information__item information__item--red"></div>
-                <div class="information__item information__item--smile"></div>
-              </div>
-              <div class="information__phone-2">
-                <div class="information__item information__item--black-white"></div>
-                <div class="information__item information__item--red"></div>
-                <div class="information__item information__item--smile"></div>
-              </div>
-              <div class="information__phone-3">
-                <div class="information__item information__item--black-white"></div>
-                <div class="information__item information__item--red"></div>
-                <div class="information__item information__item--smile"></div>
-              </div>
-            </div>
+            <ul class="information__list">
+              <li class="information__item">
+                <div class="information__item-phone-1">
+                  <img class="information__phone-desktop" src="img/photo/desktop/iphone.png" width="186" height="382" alt="Iphone.">
+                  <img class="information__grey-desktop" src="img/photo/desktop/iphone-screen-1.png" width="169" height="298" alt="Чёрно-белые мусорные баки.">
+                </div>
+                <p class="information__term">Поднимает настроение</p>
+                <p class="information__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                </li>
+              <li class="information__item">
+                <div class="information__item-phone-2">
+                  <img class="information__phone-desktop" src="img/photo/desktop/iphone.png" width="186" height="382" alt="Iphone.">
+                  <img class="information__pink-desktop" src="img/photo/desktop/iphone-screen-2.png" width="169" height="298" alt="Розовые мусорные баки.">
+                </div>
+                <p class="information__term">Меняет мир вокруг</p>
+                <p class="information__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы<br class="information__description-br"> усилить эффект</p>
+                </li>
+              <li class="information__item">
+                <div class="information__item-phone-3">
+                  <img class="information__phone-desktop" src="img/photo/desktop/iphone.png" width="186" height="382" alt="Iphone.">
+                  <img class="information__smile-desktop" src="img/photo/desktop/iphone-screen-3.png" width="169" height="298" alt="Смайлик.">
+                </div>
+                <p class="information__term">Заводит новых друзей</p>
+                <p class="information__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              </li>
+            </ul>
+            <img class="information__phone-mobile" src="img/photo/mobile/iphone-3.png" width="157" height="320" alt="Iphone.">
+            <img class="information__smile-mobile" src="img/photo/mobile/iphone-screen-3.png" width="140" height="249" alt="Смайлик.">
+            <img class="information__phone-tablet" src="img/photo/tablet/iphone-3.png" width="268" height="547" alt="Iphone.">
+            <img class="information__smile-tablet" src="img/photo/tablet/iphone-screen-3.png" width="241" height="425" alt="Смайлик.">
           </div>
         </div>
       </section>
       <section class="effect">
-        <div class="effect__inform">
+        <div class="effect__container">
           <div class="effect__clock">
+            <svg class="effect__clock-tablet" width="238" height="276" viewBox="0 0 238 276" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M211.3 81.6l4.3-4.3c6.2-6.1 7.3-15.1 2.5-19.9-4.8-4.8-13.8-3.7-20 2.5l-4.2 4.3a118.3 118.3 0 0 0-59.7-25.6V31h6.1c8.7 0 15.9-7 15.9-15.5S149 0 140.3 0H97.7C89 0 82 7 82 15.5S89 31 97.7 31h6.1v7.6A119 119 0 0 0 1 141.8a119.3 119.3 0 0 0 150.8 129.6 119 119 0 0 0 59.6-189.8zM119 245a87.9 87.9 0 0 1-86.3-105.3 88.2 88.2 0 0 1 120-64.2A88 88 0 0 1 119 245z" fill="#DEDEDE"/></svg>
+            <svg class="effect__circle-tablet" width="202" height="202" viewBox="0 0 202 202" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="101" cy="101" r="93" stroke="#D22856" stroke-width="16"/>
+            </svg>
+            <svg class="effect__clock-desktop" width="298" height="345" viewBox="0 0 298 345" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M264.6 102l5.3-5.3c7.8-7.7 9.2-19 3.2-25-6-6-17.3-4.5-25 3.2l-5.4 5.4a148.2 148.2 0 0 0-74.7-32v-9.6h7.7c10.9 0 19.8-8.7 19.8-19.3 0-10.7-9-19.4-19.8-19.4h-53.3c-11 0-19.9 8.7-19.9 19.4 0 10.6 9 19.3 19.9 19.3h7.6v9.6A149 149 0 1 0 264.6 102zM149 306.2a110.2 110.2 0 1 1 0-220.4 110.2 110.2 0 0 1 0 220.4z" fill="#DEDEDE"/></svg>
+            <svg class="effect__circle-desktop" width="252" height="252" viewBox="0 0 252 252" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="126" cy="126" r="117" stroke="#D22856" stroke-width="18"/>
+            </svg>
             <p class="effect__24">24</p>
           </div>
-        <div class="effect__wrapper">
-          <h3 class="effect__title">Эффект на 24 часа!</h3>
-          <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-          <a class="effect__link" href="#">Узнать больше об исследовании</a>
+          <div class="effect__wrapper">
+            <h3 class="effect__title">Эффект<br class="effect__br"> на 24 часа!</h3>
+            <p class="effect__text">Британские ученые провели исследования и доказали,<br class="effect__br-desktop"> что положительный эффект<br class="effect__br"> от использования приложения длится целые сутки!</p>
+            <a class="effect__link" href="#">Узнать больше об исследовании</a>
+          </div>
         </div>
-      </div>
       </section>
       <section class="reviews">
-        <div class="reviews__quotes"></div>
-        <div class="reviews__wrapper slider">
+        <div class="reviews__container slider">
           <h2 class="visually-hidden">Обзор приложения.</h2>
+          <button class="reviews__prew" type="button">
+            <svg width="22" height="41" viewBox="0 0 22 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="M2 20.5l19.7-19a.8.8 0 0 0 .3-.7.8.8 0 0 0-.3-.6.9.9 0 0 0-.6-.2.9.9 0 0 0-.6.2L.3 20a.8.8 0 0 0-.3.6.8.8 0 0 0 .3.6l20.2 19.7a.9.9 0 0 0 1.1 0c.2 0 .3-.2.3-.3a.8.8 0 0 0-.2-1L2 20.6z" fill="#283645"/></svg>
+            <span class="visually-hidden">Предыдущий отзыв.</span>
+          </button>
           <div class="reviews__list slider__list">
-            <button class="reviews__prew" type="button">
-              <svg width="22" height="41" viewBox="0 0 22 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="M2 20.5l19.7-19a.8.8 0 0 0 .3-.7.8.8 0 0 0-.3-.6.9.9 0 0 0-.6-.2.9.9 0 0 0-.6.2L.3 20a.8.8 0 0 0-.3.6.8.8 0 0 0 .3.6l20.2 19.7a.9.9 0 0 0 1.1 0c.2 0 .3-.2.3-.3a.8.8 0 0 0-.2-1L2 20.6z" fill="#283645"/></svg>
-              <span class="visually-hidden">Предыдущий отзыв.</span>
-            </button>
-            <div class="reviews__item slider__item">
-              <p class="reviews__profission">25 лет, водитель трамвая</p>
-              <b class="reviews__author">Николай Петров</b>
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </div>
-            <div class="reviews__item slider__item">
-              <p class="reviews__profission">25 лет, водитель трамвая</p>
-              <b class="reviews__author">Николай Петров</b>
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </div>
-            <div class="reviews__item slider__item">
-              <p class="reviews__profission">25 лет, водитель трамвая</p>
-              <b class="reviews__author">Николай Петров</b>
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </div>
-            <button class="reviews__next" type="button">
-              <svg width="22" height="41" viewBox="0 0 22 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="M20 20.5L.3 39.5a.8.8 0 0 0-.3.7.8.8 0 0 0 .3.6.9.9 0 0 0 .6.2.9.9 0 0 0 .6-.2L21.7 21a.8.8 0 0 0 .3-.6.8.8 0 0 0-.3-.6L1.5.2A.9.9 0 0 0 .4.2C.2.1 0 .3 0 .4a.8.8 0 0 0 .2 1l19.7 19z" fill="#283645"/></svg>
-              <span class="visually-hidden">Следующий отзыв.</span>
-            </button>
+            <ul class="reviews__list-container">
+              <li class="reviews__item slider__item">
+                <p class="reviews__profission">25 лет, водитель трамвая</p>
+                <b class="reviews__author">Николай Петров</b>
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </li>
+              <li class="reviews__item slider__item">
+                <p class="reviews__profission">25 лет, водитель трамвая</p>
+                <b class="reviews__author">Николай Петров</b>
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </li>
+              <li class="reviews__item slider__item">
+                <p class="reviews__profission">25 лет, водитель трамвая</p>
+                <b class="reviews__author">Николай Петров</b>
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </li>
+            </ul>
           </div>
+          <button class="reviews__next" type="button">
+            <svg width="22" height="41" viewBox="0 0 22 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="M20 20.5L.3 39.5a.8.8 0 0 0-.3.7.8.8 0 0 0 .3.6.9.9 0 0 0 .6.2.9.9 0 0 0 .6-.2L21.7 21a.8.8 0 0 0 .3-.6.8.8 0 0 0-.3-.6L1.5.2A.9.9 0 0 0 .4.2C.2.1 0 .3 0 .4a.8.8 0 0 0 .2 1l19.7 19z" fill="#283645"/></svg>
+            <span class="visually-hidden">Следующий отзыв.</span>
+          </button>
           <div class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--current" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+            <button class="slider__button1" type="button">
+              <svg class="slider__button-active" width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="6" cy="6" r="4.5" fill="white" stroke="#283645" stroke-width="3"/>
+              </svg>
+              </button>
+            <button class="slider__button2" type="button">
+              <svg class="slider__button-inactive" width="6" height="6" viewBox="0 0 6 6" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="3" cy="3" r="3" />
+              </svg>
+              </button>
+            <button class="slider__button3" type="button">
+              <svg class="slider__button-inactive" width="6" height="6" viewBox="0 0 6 6" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="3" cy="3" r="3" />
+              </svg>
+            </button>
           </div>
         </div>
       </section>
       <section class="price">
-        <div class="price__page">
+        <div class="price__container">
         <h2 class="visually-hidden">Прайс лист.</h2>
           <div class="price__wrapper slider">
             <table class="price__list slider__list">
               <tr class="price__table-title">
                 <th class="price__none slider__item"></th>
                 <th class="price__base slider__item">
-                  <b class="price__type">База</b>
+                  <b class="price__type">БАЗА</b>
                   <p class="price__cost">1,99 USD</p>
                 </th>
                 <th class="price__standart slider__item">
-                  <small class="price__hit">ХИТ</small>
+                  <p class="price__hit">ХИТ</p>
                   <b class="price__type">СТАНДАРТ</b>
                   <p class="price__cost">3,99 USD</p>
                 </th>
@@ -186,12 +211,15 @@
                 </td>
                 <td class="price__cell-1-2 slider__item">
                   <span class="price__visible">Розовый фильтр</span>
+                  <svg class="price__yes" width="31" height="21" viewBox="0 0 31 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M30.6.4a1.5 1.5 0 0 0-1.1-.4 1.6 1.6 0 0 0-1.1.4l-18 17.1-7.8-7.4a1.6 1.6 0 0 0-2.2 0c-.2.3-.4.7-.4 1 0 .4.1.8.4 1l8.9 8.5a1.5 1.5 0 0 0 1 .4c.5 0 .9-.2 1.2-.4l19-18.1c.3-.3.5-.7.5-1 0-.4-.2-.8-.4-1z" fill="#3DC644"/></svg>
                 </td>
                 <td class="price__cell-1-3 slider__item">
                   <span class="price__visible">Розовый фильтр</span>
+                  <svg class="price__yes" width="31" height="21" viewBox="0 0 31 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M30.6.4a1.5 1.5 0 0 0-1.1-.4 1.6 1.6 0 0 0-1.1.4l-18 17.1-7.8-7.4a1.6 1.6 0 0 0-2.2 0c-.2.3-.4.7-.4 1 0 .4.1.8.4 1l8.9 8.5a1.5 1.5 0 0 0 1 .4c.5 0 .9-.2 1.2-.4l19-18.1c.3-.3.5-.7.5-1 0-.4-.2-.8-.4-1z" fill="#3DC644"/></svg>
                 </td>
                 <td class="price__cell-1-4 slider__item">
                   <span class="price__visible">Розовый фильтр</span>
+                  <svg class="price__yes" width="31" height="21" viewBox="0 0 31 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M30.6.4a1.5 1.5 0 0 0-1.1-.4 1.6 1.6 0 0 0-1.1.4l-18 17.1-7.8-7.4a1.6 1.6 0 0 0-2.2 0c-.2.3-.4.7-.4 1 0 .4.1.8.4 1l8.9 8.5a1.5 1.5 0 0 0 1 .4c.5 0 .9-.2 1.2-.4l19-18.1c.3-.3.5-.7.5-1 0-.4-.2-.8-.4-1z" fill="#3DC644"/></svg>
                 </td>
               </tr>
               <tr class="price__line">
@@ -200,12 +228,15 @@
                 </td>
                 <td class="price__cell-2-2 slider__item">
                   <span class="price__visible">Смайлики</span>
+                  <svg class="price__no" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.6 13.5l11-11A1.5 1.5 0 0 0 25.5 0c-.4 0-.8.2-1 .4l-11 11-11-11A1.5 1.5 0 0 0 0 1.5c0 .4.2.8.4 1l11 11-11 11a1.5 1.5 0 0 0 0 2 1.5 1.5 0 0 0 2.2 0l11-10.9 10.8 11a1.5 1.5 0 0 0 2 .1 1.5 1.5 0 0 0 .2-2.3l-11-10.9z" fill="#F25B26"/></svg>
                 </td>
                 <td class="price__cell-2-3 slider__item">
                   <span class="price__visible">Смайлики</span>
+                  <svg class="price__yes" width="31" height="21" viewBox="0 0 31 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M30.6.4a1.5 1.5 0 0 0-1.1-.4 1.6 1.6 0 0 0-1.1.4l-18 17.1-7.8-7.4a1.6 1.6 0 0 0-2.2 0c-.2.3-.4.7-.4 1 0 .4.1.8.4 1l8.9 8.5a1.5 1.5 0 0 0 1 .4c.5 0 .9-.2 1.2-.4l19-18.1c.3-.3.5-.7.5-1 0-.4-.2-.8-.4-1z" fill="#3DC644"/></svg>
                 </td>
                 <td class="price__cell-2-4 slider__item">
                   <span class="price__visible">Смайлики</span>
+                  <svg class="price__yes" width="31" height="21" viewBox="0 0 31 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M30.6.4a1.5 1.5 0 0 0-1.1-.4 1.6 1.6 0 0 0-1.1.4l-18 17.1-7.8-7.4a1.6 1.6 0 0 0-2.2 0c-.2.3-.4.7-.4 1 0 .4.1.8.4 1l8.9 8.5a1.5 1.5 0 0 0 1 .4c.5 0 .9-.2 1.2-.4l19-18.1c.3-.3.5-.7.5-1 0-.4-.2-.8-.4-1z" fill="#3DC644"/></svg>
                 </td>
               </tr>
               <tr class="price__line">
@@ -214,19 +245,34 @@
                 </td>
                 <td class="price__cell-3-2 slider__item">
                   <span class="price__visible">Комментарии</span>
+                  <svg class="price__no" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.6 13.5l11-11A1.5 1.5 0 0 0 25.5 0c-.4 0-.8.2-1 .4l-11 11-11-11A1.5 1.5 0 0 0 0 1.5c0 .4.2.8.4 1l11 11-11 11a1.5 1.5 0 0 0 0 2 1.5 1.5 0 0 0 2.2 0l11-10.9 10.8 11a1.5 1.5 0 0 0 2 .1 1.5 1.5 0 0 0 .2-2.3l-11-10.9z" fill="#F25B26"/></svg>
                 </td>
                 <td class="price__cell-3-3 slider__item">
                   <span class="price__visible">Комментарии</span>
+                  <svg class="price__no" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.6 13.5l11-11A1.5 1.5 0 0 0 25.5 0c-.4 0-.8.2-1 .4l-11 11-11-11A1.5 1.5 0 0 0 0 1.5c0 .4.2.8.4 1l11 11-11 11a1.5 1.5 0 0 0 0 2 1.5 1.5 0 0 0 2.2 0l11-10.9 10.8 11a1.5 1.5 0 0 0 2 .1 1.5 1.5 0 0 0 .2-2.3l-11-10.9z" fill="#F25B26"/></svg>
                 </td>
                 <td class="price__cell-3-4 slider__item">
                   <span class="price__visible">Комментарии</span>
+                  <svg class="price__yes" width="31" height="21" viewBox="0 0 31 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M30.6.4a1.5 1.5 0 0 0-1.1-.4 1.6 1.6 0 0 0-1.1.4l-18 17.1-7.8-7.4a1.6 1.6 0 0 0-2.2 0c-.2.3-.4.7-.4 1 0 .4.1.8.4 1l8.9 8.5a1.5 1.5 0 0 0 1 .4c.5 0 .9-.2 1.2-.4l19-18.1c.3-.3.5-.7.5-1 0-.4-.2-.8-.4-1z" fill="#3DC644"/></svg>
                 </td>
               </tr>
             </table>
               <div class="price__toggles slider__toggles">
-                <button class="slider__toggle" type="button">1</button>
-                <button class="slider__toggle slider__toggle--current" type="button">2</button>
-                <button class="slider__toggle" type="button">3</button>
+                <button class="slider__toggle" type="button">
+                  <svg class="slider__button-inactive" width="6" height="6" viewBox="0 0 6 6" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="3" cy="3" r="3" />
+                  </svg>
+                </button>
+                <button class="slider__toggle slider__toggle--current" type="button">
+                  <svg class="slider__button-active" width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="6" cy="6" r="4.5" fill="white" stroke="#283645" stroke-width="3"/>
+                  </svg>
+                </button>
+                <button class="slider__toggle" type="button">
+                  <svg class="slider__button-inactive" width="6" height="6" viewBox="0 0 6 6" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="3" cy="3" r="3" />
+                  </svg>
+                </button>
             </div>
           </div>
         </div>
@@ -253,13 +299,15 @@
         </div>
         <div class="contacts__map-wrapper">
           <img class="contacts__map-mobile" src="img/photo/mobile/map.jpg" width="320" height="200" alt="Карта с указанием нашего месторасположения.">
+          <img class="contacts__map-mobile-tringle" src="img/logo/triangle-white-footer.svg" width="1200"  height="123" alt="Белый треугольник.">
           <img class="contacts__map-tablet" src="img/photo/tablet/map.jpg" width="660" height="374" alt="Карта с указанием нашего месторасположения.">
           <img class="contacts__map-desktop" src="img/photo/desktop/map.jpg" width="1200" height="502" alt="Карта с указанием нашего месторасположения.">
+          <img class="contacts__map-desktop-tringle" src="img/logo/triangle-white-footer-desktop.svg" width="1429"  height="123" alt="Белый треугольник.">
         </div>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <div class="page-footer__container">
         <a class="page-footer__link-pink" href="#">
           <svg class="page-footer__logo-mobile" width="145" height="40" viewBox="0 0 145 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M71.005 18.5486C71.0049 18.2125 71.1358 17.8898 71.3697 17.6494C71.6037 17.409 71.922 17.2701 72.2568 17.2623H79.39C84.4469 17.2623 87.7751 19.9645 87.7751 24.3918V24.4516C87.7751 29.2977 83.7415 31.8105 78.9727 31.8105H73.5384V38.611C73.5539 38.7874 73.5328 38.9651 73.4762 39.1329C73.4196 39.3006 73.3289 39.4547 73.2097 39.5854C73.0906 39.716 72.9457 39.8204 72.7842 39.8918C72.6227 39.9631 72.4481 40 72.2717 40C72.0952 40 71.9207 39.9631 71.7592 39.8918C71.5977 39.8204 71.4527 39.716 71.3336 39.5854C71.2145 39.4547 71.1237 39.3006 71.0671 39.1329C71.0106 38.9651 70.9894 38.7874 71.005 38.611V18.5486ZM79.0721 29.5171C82.7778 29.5171 85.2119 27.5228 85.2119 24.5314V24.4716C85.2119 21.2608 82.8175 19.5956 79.2509 19.5956H73.588V29.4772L79.0721 29.5171Z" fill="#283645"/>
@@ -274,24 +322,24 @@
         <ul class="page-footer__social">
           <li class="page-footer__item">
             <a class="page-footer__link page-footer__link--twitter" href="https://twitter.com/htmlacademy">
-              <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11.5641 0.168904C12.2458 -0.0461515 12.9837 -0.0560928 13.6719 0.140507C14.3602 0.337107 14.9633 0.730138 15.3947 1.26319C16.1053 1.05385 16.8055 0.815959 17.5263 0.606617C17.5164 0.925848 17.4299 1.23907 17.2732 1.52372C17.1165 1.80837 16.8935 2.05738 16.6201 2.2528C16.8726 2.27877 17.1281 2.25112 17.3673 2.17197C17.6064 2.09281 17.8228 1.96424 18 1.79606C17.901 2.20987 17.6999 2.59695 17.4123 2.92708C17.1247 3.2572 16.7585 3.52144 16.3421 3.69916C16.095 9.96988 12.9748 14.1662 5.65332 13.9949H5.14874C4.70595 13.9949 0.731121 13.5667 0 12.2441C1.75201 12.4899 3.53888 12.0976 4.98398 11.1498C3.95423 10.8643 2.13158 10.7026 1.82265 8.40934C2.2108 8.54337 2.6321 8.57306 3.03776 8.49498C1.76087 7.70519 0.339817 7.0391 0.422197 4.99327C0.819634 5.29882 1.3269 5.45507 1.84325 5.43098C1.10183 5.20261 -0.24714 2.30989 0.895881 0.825474C2.82151 2.54778 4.86041 4.17493 8.48512 4.3367C8.71167 2.20522 9.68993 0.777896 11.5641 0.168904Z" fill="#D22856"/>
+              <svg class="page-footer__link-logo" width="18" height="14" viewBox="0 0 18 14" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.5641 0.168904C12.2458 -0.0461515 12.9837 -0.0560928 13.6719 0.140507C14.3602 0.337107 14.9633 0.730138 15.3947 1.26319C16.1053 1.05385 16.8055 0.815959 17.5263 0.606617C17.5164 0.925848 17.4299 1.23907 17.2732 1.52372C17.1165 1.80837 16.8935 2.05738 16.6201 2.2528C16.8726 2.27877 17.1281 2.25112 17.3673 2.17197C17.6064 2.09281 17.8228 1.96424 18 1.79606C17.901 2.20987 17.6999 2.59695 17.4123 2.92708C17.1247 3.2572 16.7585 3.52144 16.3421 3.69916C16.095 9.96988 12.9748 14.1662 5.65332 13.9949H5.14874C4.70595 13.9949 0.731121 13.5667 0 12.2441C1.75201 12.4899 3.53888 12.0976 4.98398 11.1498C3.95423 10.8643 2.13158 10.7026 1.82265 8.40934C2.2108 8.54337 2.6321 8.57306 3.03776 8.49498C1.76087 7.70519 0.339817 7.0391 0.422197 4.99327C0.819634 5.29882 1.3269 5.45507 1.84325 5.43098C1.10183 5.20261 -0.24714 2.30989 0.895881 0.825474C2.82151 2.54778 4.86041 4.17493 8.48512 4.3367C8.71167 2.20522 9.68993 0.777896 11.5641 0.168904Z" />
               </svg>
               <span class="visually-hidden">Мы в Твитере.</span>
             </a>
           </li>
           <li class="page-footer__item">
             <a class="page-footer__link page-footer__link--facebook" href="https://www.facebook.com/htmlacademy">
-              <svg width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6.50865 3.19324H9V0H6.02076C2.76125 0.171067 1.59862 2.27138 2.07612 5.81626H0V9.15206H2.07612V18H6.02076V9.15206H8.97924V5.81626H6.01038C5.98962 4.81837 5.96886 3.52587 6.50865 3.19324Z" fill="#D22856"/>
+              <svg class="page-footer__link-logo" width="9" height="18" viewBox="0 0 9 18" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.50865 3.19324H9V0H6.02076C2.76125 0.171067 1.59862 2.27138 2.07612 5.81626H0V9.15206H2.07612V18H6.02076V9.15206H8.97924V5.81626H6.01038C5.98962 4.81837 5.96886 3.52587 6.50865 3.19324Z" />
               </svg>
               <span class="visually-hidden">Мы в Фейсбуке.</span>
             </a>
           </li>
           <li class="page-footer__item">
             <a class="page-footer__link page-footer__link--youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">
-              <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1.83356 12.8089C1.64633 12.9278 1.42471 12.9941 1.19626 12.9996C0.967817 13.0051 0.74263 12.9495 0.548717 12.8398C0.354804 12.7301 0.200724 12.571 0.105646 12.3824C0.010569 12.1938 -0.0213097 11.984 0.0139762 11.779V1.22097C-0.0213097 1.01605 0.010569 0.806234 0.105646 0.617628C0.200724 0.429021 0.354804 0.269949 0.548717 0.1602C0.74263 0.0504516 0.967817 -0.00512927 1.19626 0.000372265C1.42471 0.0058738 1.64633 0.0722149 1.83356 0.191142L14.2333 5.69284C15.2556 6.13817 15.2556 6.86183 14.2333 7.30716L1.83356 12.8089Z" fill="#D22856"/>
+              <svg class="page-footer__link-logo" width="15" height="13" viewBox="0 0 15 13" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.83356 12.8089C1.64633 12.9278 1.42471 12.9941 1.19626 12.9996C0.967817 13.0051 0.74263 12.9495 0.548717 12.8398C0.354804 12.7301 0.200724 12.571 0.105646 12.3824C0.010569 12.1938 -0.0213097 11.984 0.0139762 11.779V1.22097C-0.0213097 1.01605 0.010569 0.806234 0.105646 0.617628C0.200724 0.429021 0.354804 0.269949 0.548717 0.1602C0.74263 0.0504516 0.967817 -0.00512927 1.19626 0.000372265C1.42471 0.0058738 1.64633 0.0722149 1.83356 0.191142L14.2333 5.69284C15.2556 6.13817 15.2556 6.86183 14.2333 7.30716L1.83356 12.8089Z" />
               </svg>
               <span class="visually-hidden">Мы в Ютубе.</span>
             </a>
@@ -308,5 +356,29 @@
         </div>
       </div>
     </footer>
+    <script>
+      var navMain = document.querySelector('.main-navigation');
+      var navToggle = document.querySelector('.main-navigation__toggle');
+      var ulMenu = document.querySelector('.main-navigation__list-none');
+      var divPage = document.querySelector('.page-header__container');
+      var sectApp = document.querySelector('.applications');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('toggle-open')) {
+          navMain.classList.remove('toggle-open');
+          navMain.classList.add('toggle-close');
+          ulMenu.classList.remove('main-navigation__list-none');
+          divPage.classList.add('page-header__container-color');
+          sectApp.classList.add('applications__height');
+
+        } else {
+          navMain.classList.add('toggle-open');
+          navMain.classList.remove('toggle-close');
+          ulMenu.classList.add('main-navigation__list-none');
+          divPage.classList.remove('page-header__container-color');
+          sectApp.classList.remove('applications__height');
+        }
+      });
+    </script>
   </body>
 </html>
