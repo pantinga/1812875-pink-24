@@ -3,6 +3,7 @@ body {
   padding: 0;
   background-color: @base-bg-color;
   font-family: "Open Sans", sans-serif;
+  min-width: 320px;
 }
 
 .visually-hidden {
@@ -19,4 +20,41 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+th {
+  width: 276px;
+  height: 96px;
+
+  @media (min-width: @tablet-width) {
+    width: 153px;
+    height: 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 233px;
+    height: 94px;
+  }
+}
+
+td {
+  width: 276px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  height: 50px;
+  padding-left: 19px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: 137px;
+    text-transform: none;
+    padding-left: 16px;
+    height: 37px;
+
+    @media (min-width: @desktop-width) {
+      width: 233px;
+      height: 59px;
+      padding: 0;
+    }
+  }
 }

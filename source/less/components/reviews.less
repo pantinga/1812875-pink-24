@@ -1,6 +1,9 @@
-.reviews {
-  width: 320px;
-  margin: 0 auto;
+.reviews__container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: @tablet-width) {
     width: 620px;
@@ -8,26 +11,21 @@
 
   @media (min-width: @desktop-width) {
     width: 940px;
-  }
-}
-
-.reviews__quotes {
-  background-image: url("../img/logo/quotes.svg");
-  background-repeat: no-repeat;
-  width: 79px;
-  height: 63px;
-  display: none;
-
-  @media (min-width: @desktop-width) {
-    display: block;
+    padding-left: 130px;
+    padding-right: 130px;
+    display: flex;
+    margin-top: 71px;
+    justify-content: space-between;
+    margin-bottom: 8px;
   }
 }
 
 .reviews__list {
   display: block;
+  overflow: hidden;
 
   @media (min-width: @desktop-width) {
-    display: flex;
+    width: 688px;
   }
 }
 
@@ -39,6 +37,9 @@
     display: block;
     background-color: transparent;
     cursor: pointer;
+    margin-bottom: 20px;
+    padding: 0;
+    margin-top: 17px;
   }
 }
 
@@ -50,6 +51,28 @@
     display: block;
     background-color: transparent;
     cursor: pointer;
+    margin-bottom: 20px;
+    padding: 0;
+    margin-top: 17px;
+  }
+}
+
+.reviews__list-container {
+  padding: 0;
+  display: flex;
+  text-align: center;
+  width: 840px;
+  margin-top: 41px;
+  margin-bottom: 11px;
+
+  @media (min-width: @tablet-width) {
+    width: 1860px;
+    margin-top: 77px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 2064px;
+    margin-top: 95px;
   }
 }
 
@@ -59,6 +82,10 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 688px;
   }
 }
 
@@ -71,6 +98,19 @@
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
+    position: relative;
+  }
+}
+
+.reviews__text::before {
+  @media (min-width: @desktop-width) {
+    content: "";
+    background-image: url("../img/logo/quotes.svg");
+    position: absolute;
+    width: 79px;
+    height: 63px;
+    bottom: 139px;
+    left: 305px;
   }
 }
 
@@ -83,6 +123,7 @@
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
+    margin-top: 18px;
   }
 
   @media (min-width: @desktop-width) {
@@ -100,15 +141,20 @@
 
   @media (min-width: @tablet-width) {
     display: block;
+    margin: 0;
+    margin-bottom: 19px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
+    margin-top: 2px;
   }
 }
 
 .reviews__toggles {
   display: block;
+  margin-left: -8px;
+  text-align: center;
 
   @media (min-width: @desktop-width) {
     display: none;
