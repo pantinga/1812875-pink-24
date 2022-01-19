@@ -75,6 +75,7 @@
 .price__base {
   background-color: #283645;
   border-radius: 1px 0 0 0;
+  position: relative;
 }
 
 .price__standart {
@@ -85,9 +86,34 @@
   border-right: 2px solid #e5e5e5;
 }
 
+.price__standart::before {
+  content: "";
+  background-image: url("../img/logo/hit-ribbon.svg");
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 74px;
+  height: 74px;
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/logo/hit-ribbon-tablet.svg");
+    width: 61px;
+    height: 61px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/logo/hit-ribbon.svg");
+    width: 74px;
+    height: 74px;
+    top: 0;
+  }
+}
+
 .price__unlim {
   background-color: #283645;
   border-radius: 0 1px 0 0;
+  position: relative;
 }
 
 .price__cell-1-1 {
@@ -159,10 +185,12 @@
 }
 
 .price__invisible {
+  @media (min-width: @tablet-width) {
+    padding-left: 15px;
+  }
+
   @media (min-width: @desktop-width) {
-    position: absolute;
-    top: 14px;
-    left: 21px;
+    padding-left: 21px;
   }
 }
 
@@ -172,6 +200,9 @@
   font-size: 16px;
   line-height: 30px;
   color: #ffffff;
+  display: flex;
+  padding-left: 95px;
+  margin-bottom: 44px;
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
@@ -185,9 +216,19 @@
   line-height: 30px;
   color: #ffffff;
   margin: 0;
+  position: absolute;
+  left: 101px;
+  bottom: 29px;
+
+  @media (min-width: @tablet-width) {
+    left: 40px;
+    bottom: 8px;
+  }
 
   @media (min-width: @desktop-width) {
     font-size: 24px;
+    left: 68px;
+    bottom: 19px;
   }
 }
 
@@ -197,13 +238,22 @@
   font-size: 14px;
   line-height: 30px;
   color: #ffffff;
-  background-color: #d22856;
   transform: rotate(-45deg);
   margin: 0;
   position: absolute;
   left: -50px;
   top: 15px;
   width: 150px;
+
+  @media (min-width: @tablet-width) {
+    left: -54px;
+    top: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: -46px;
+    top: 15px;
+  }
 }
 
 .price__line {
@@ -220,6 +270,8 @@
 }
 
 .price__visible {
+  padding-left: 19px;
+
   @media (min-width: @tablet-width) {
     display: none;
   }
@@ -264,5 +316,41 @@
   @media (min-width: @desktop-width) {
     top: 19px;
     right: 100px;
+  }
+}
+
+.price__base .price__type {
+  @media (min-width: @tablet-width) {
+    padding-left: 57px;
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 94px;
+    margin-bottom: 34px;
+  }
+}
+
+.price__standart .price__type {
+  @media (min-width: @tablet-width) {
+    padding-left: 34px;
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 70px;
+    margin-bottom: 34px;
+  }
+}
+
+.price__unlim .price__type {
+  @media (min-width: @tablet-width) {
+    padding-left: 43px;
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 81px;
+    margin-bottom: 34px;
   }
 }

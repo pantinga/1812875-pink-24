@@ -8,9 +8,32 @@
   }
 }
 
+.upload__title-wrapper {
+  background-color: #ffffff;
+}
+
+.upload__title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 44px;
+  padding-bottom: 42px;
+
+  @media (min-width: @tablet-width) {
+    width: 422px;
+    font-size: 18px;
+  }
+}
+
 .upload__wrapper {
   width: 280px;
   margin: 0 auto;
+  margin-top: 20px;
 
   @media (min-width: @tablet-width) {
     width: 620px;
@@ -43,6 +66,7 @@
 .upload__crop {
   border: none;
   background-color: transparent;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -52,6 +76,8 @@
 .upload__flll {
   border: none;
   background-color: transparent;
+  margin-left: 19px;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -61,6 +87,8 @@
 .upload__contrast {
   border: none;
   background-color: transparent;
+  position: relative;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -68,13 +96,16 @@
 }
 
 .upload__post {
-  border: none;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 18px;
   color: #d22856;
   background-color: transparent;
+  border-radius: 29px;
+  padding: 15px 90.5px 16px;
+  border: 3px solid #d22856;
+  box-sizing: border-box;
 }
 
 .upload__cancel {
@@ -95,6 +126,8 @@
 
 .upload__buttons {
   display: block;
+  margin-top: 41px;
+  margin-left: 31px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -102,6 +135,51 @@
   }
 }
 
+.upload__crop-logo {
+  fill: #283645;
+  opacity: 0.3;
+}
+
+.upload__crop-logo:hover {
+  fill: #283645;
+  opacity: 0.5;
+}
+
+.upload__crop-logo:active {
+  fill: #d22856;
+  opacity: 1;
+}
+
+.upload__flll-logo {
+  fill: #283645;
+  opacity: 0.3;
+}
+
+.upload__flll-logo:hover {
+  opacity: 0.5;
+}
+
+.upload__flll-logo:active {
+  fill: #d22856;
+  opacity: 1;
+}
+
+.upload__contrast-logo {
+  fill: #283645;
+  opacity: 0.3;
+  position: absolute;
+  top: -37px;
+  left: 25px;
+}
+
+.upload__contrast-logo:hover {
+  opacity: 0.5;
+}
+
+.upload__contrast-logo:active {
+  fill: #d22856;
+  opacity: 1;
+}
 
 .upload__crop-icon {
   display: none;
