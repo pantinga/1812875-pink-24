@@ -52,6 +52,24 @@
   }
 }
 
+.main-navigation__item {
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
+}
+
+.main-navigation__link--active::before {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    content: "";
+    height: 2px;
+    background-color: #ffffff;
+    right: 0;
+    bottom: 4px;
+    left: 0;
+  }
+}
+
 .main-navigation__link:hover {
   color: #d22856;
 }

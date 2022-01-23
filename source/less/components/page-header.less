@@ -45,14 +45,20 @@
 
 .page-header__logo-mobile {
   display: block;
+  fill: #ffffff;
 
   @media (min-width: @tablet-width) {
     display: none;
   }
+}
 
-  @media (min-width: @desktop-width) {
-    display: none;
-  }
+.page-header__logo-mobile:hover {
+  fill: #d22856;
+}
+
+.page-header__logo-mobile:active {
+  fill: #ffffff;
+  opacity: 0.3;
 }
 
 .page-header__logo-tablet {
@@ -60,6 +66,7 @@
 
   @media (min-width: @tablet-width) {
     display: block;
+    fill: #ffffff;
   }
 
   @media (min-width: @desktop-width) {
@@ -67,14 +74,29 @@
   }
 }
 
+.page-header__logo-tablet:hover {
+  fill: #d22856;
+}
+
+.page-header__logo-tablet:active {
+  fill: #ffffff;
+  opacity: 0.3;
+}
+
 .page-header__logo-desktop {
   display: none;
 
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
-
   @media (min-width: @desktop-width) {
     display: block;
+    fill: #ffffff;
   }
+}
+
+.page-header__logo-desktop:hover {
+  fill: #d22856;
+}
+
+.page-header__logo-desktop:active {
+  fill: #ffffff;
+  opacity: 0.3;
 }

@@ -2,10 +2,11 @@
   width: 240px;
   height: 2px;
   background: #283645;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     width: 202px;
-    margin-bottom: 70px;
+    margin-bottom: 71px;
     margin-top: 10px;
   }
 
@@ -20,11 +21,12 @@
   height: 2px;
   background: #283645;
   display: none;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     display: block;
     width: 202px;
-    margin-bottom: 70px;
+    margin-bottom: 68px;
   }
 
   @media (min-width: @desktop-width) {
@@ -37,9 +39,41 @@
   width: 240px;
   height: 2px;
   background: #283645;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     display: block;
     width: 202px;
+  }
+}
+
+.scale__list {
+  margin-top: 26px;
+  margin-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 46px;
+    margin-left: 55px;
+  }
+}
+
+.scale__line-mobile {
+  position: absolute;
+  top: 36px;
+  right: -40px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.scale__line-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    position: absolute;
+    top: 36px;
+    left: -55px;
   }
 }

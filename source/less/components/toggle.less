@@ -1,20 +1,28 @@
 .toggle__scroll1 {
   border: none;
   background-color: transparent;
-  top: -9px;
-  position: relative;
+  top: -6px;
+  left: 187px;
+  position: absolute;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    left: 154px;
+  }
 }
 
 .toggle__scroll3 {
   display: none;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     display: inline;
     background-color: transparent;
-    top: -9px;
-    position: relative;
+    top: -6px;
+    left: 90px;
+    position: absolute;
   }
 }
 
@@ -22,11 +30,21 @@
   display: none;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     display: inline;
     background-color: transparent;
-    top: -9px;
-    position: relative;
+    top: -6px;
+    left: 19px;
+    position: absolute;
+  }
+}
+
+.toggle__scroll {
+  fill: #ffffff;
+
+  &:active {
+    fill: #d22856;
   }
 }
