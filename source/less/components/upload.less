@@ -1,9 +1,11 @@
 .upload {
   background-color: #f2f2f2;
+  padding-bottom: 0.1px;
 
   @media (min-width: @desktop-width) {
     width: 940px;
     margin: 0 auto;
+    padding-bottom: 3px;
   }
 }
 
@@ -65,13 +67,22 @@
   width: 280px;
   margin: 0 auto;
   background-image: url("../img/photo/mobile/photo-7-mobile.jpg");
+  background-size: cover;
   height: 374px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/photo/mobile/photo-7-mobile@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     width: 300px;
     height: 400px;
     background-image: url("../img/photo/tablet/photo-7-tablet.jpg");
     margin-top: 37px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/photo/tablet/photo-7-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -139,6 +150,10 @@
     margin-top: 29px;
     margin-left: 2px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 16px 35px 15px 40px;
+  }
 }
 
 .upload__cancel {
@@ -170,6 +185,12 @@
     margin-top: 25px;
     margin-left: 2px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 15px 50px 15px 53px;
+    margin-left: 45px;
+    margin-top: 29px;
+  }
 }
 
 .upload__menu {
@@ -200,12 +221,12 @@
   }
 }
 
-.upload__crop-logo {
+/*.upload__crop-logo {
   fill: #283645;
   opacity: 0.3;
-}
+}*/
 
-.upload__crop-logo:hover {
+/*.upload__crop-logo:hover {
   fill: #283645;
   opacity: 0.5;
 }
@@ -213,20 +234,15 @@
 .upload__crop-logo:active {
   fill: #d22856;
   opacity: 1;
+}*/
+
+.upload__crop-logo--active {
+  fill: #d22856;
 }
 
 .upload__flll-logo {
   fill: #283645;
   opacity: 0.3;
-}
-
-.upload__flll-logo:hover {
-  opacity: 0.5;
-}
-
-.upload__flll-logo:active {
-  fill: #d22856;
-  opacity: 1;
 }
 
 .upload__contrast-logo {
@@ -235,15 +251,6 @@
   position: absolute;
   top: -37px;
   left: 25px;
-}
-
-.upload__contrast-logo:hover {
-  opacity: 0.5;
-}
-
-.upload__contrast-logo:active {
-  fill: #d22856;
-  opacity: 1;
 }
 
 .upload__crop-icon {
@@ -315,5 +322,7 @@
   @media (min-width: @desktop-width) {
     flex-direction: row;
     width: 410px;
+    margin-top: 152px;
+    margin-left: 8px;
   }
 }

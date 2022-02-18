@@ -9,6 +9,10 @@
     background-image: url("../img/photo/tablet/back-tablet.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/photo/tablet/back-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -16,6 +20,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 275px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/photo/desktop/back-desktop@2x.jpg");
+    }
   }
 }
 
@@ -113,7 +121,7 @@
 
   @media (min-width: @desktop-width) {
     display: block;
-    margin-top: -170px;
+    margin-top: -169px;
     padding-left: 716px;
   }
 }
@@ -161,6 +169,10 @@
     background-image: url("../img/photo/mobile/back-mobile.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/photo/mobile/back-mobile@2x.jpg");
+    }
 
     .applications__wrapper {
       padding-top: 100px;

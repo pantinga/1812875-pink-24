@@ -12,7 +12,9 @@
 
   @media (min-width: @desktop-width) {
     margin-bottom: 90px;
-    margin-top: 20px;
+    margin-top: 10px;
+    left: 47px;
+    width: 288px;
   }
 }
 
@@ -31,6 +33,9 @@
 
   @media (min-width: @desktop-width) {
     margin-bottom: 90px;
+    margin-top: -19px;
+    margin-left: 47px;
+    width: 288px;
   }
 }
 
@@ -44,6 +49,12 @@
   @media (min-width: @tablet-width) {
     display: block;
     width: 202px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -22px;
+    margin-left: 47px;
+    width: 288px;
   }
 }
 
@@ -71,6 +82,21 @@
   display: none;
 
   @media (min-width: @tablet-width) {
+    display: block;
+    position: absolute;
+    top: 36px;
+    left: -55px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.scale__line-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
     display: block;
     position: absolute;
     top: 36px;

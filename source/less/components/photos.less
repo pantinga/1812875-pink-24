@@ -126,9 +126,17 @@
   background-size: cover;
   height: 137px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/photo/mobile/panorama-mobile@2x.jpg");
+  }
+
   @media (min-width: @tablet-width) {
     background-image: url("../img/photo/tablet/panorama-tablet.jpg");
     height: 509px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/photo/tablet/panorama-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -272,13 +280,22 @@
   width: 280px;
   margin: 0 auto;
   background-image: url("../img/photo/mobile/photo-1-mobile.jpg");
+  background-size: cover;
   height: 180px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/photo/mobile/photo-1-mobile@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     width: 300px;
     height: 300px;
     background-image: url("../img/photo/tablet/photo-1-tablet.jpg");
     margin: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/photo/tablet/photo-1-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -291,13 +308,22 @@
   width: 280px;
   margin: 0 auto;
   background-image: url("../img/photo/mobile/photo-2-mobile.jpg");
+  background-size: cover;
   height: 180px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/photo/mobile/photo-2-mobile@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     width: 300px;
     height: 300px;
     background-image: url("../img/photo/tablet/photo-2-tablet.jpg");
     margin: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/photo/tablet/photo-2-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -310,13 +336,22 @@
   width: 280px;
   margin: 0 auto;
   background-image: url("../img/photo/mobile/photo-3-mobile.jpg");
+  background-size: cover;
   height: 180px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/photo/mobile/photo-3-mobile@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     width: 300px;
     height: 300px;
     background-image: url("../img/photo/tablet/photo-3-tablet.jpg");
     margin: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/photo/tablet/photo-3-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -329,13 +364,22 @@
   width: 280px;
   margin: 0 auto;
   background-image: url("../img/photo/mobile/photo-4-mobile.jpg");
+  background-size: cover;
   height: 180px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/photo/mobile/photo-4-mobile@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     width: 300px;
     height: 300px;
     background-image: url("../img/photo/tablet/photo-4-tablet.jpg");
     margin: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/photo/tablet/photo-4-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -348,13 +392,22 @@
   width: 280px;
   margin: 0 auto;
   background-image: url("../img/photo/mobile/photo-5-mobile.jpg");
+  background-size: cover;
   height: 180px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/photo/mobile/photo-5-mobile@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     width: 300px;
     height: 300px;
     background-image: url("../img/photo/tablet/photo-5-tablet.jpg");
     margin: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/photo/tablet/photo-5-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -367,17 +420,32 @@
   width: 280px;
   margin: 0 auto;
   background-image: url("../img/photo/mobile/photo-6-mobile.jpg");
+  background-size: cover;
   height: 180px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/photo/mobile/photo-6-mobile@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     width: 300px;
     height: 300px;
     background-image: url("../img/photo/tablet/photo-6-tablet.jpg");
     margin: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/photo/tablet/photo-6-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
     height: 400px;
     background-image: url("../img/photo/desktop/photo-6-desktop.jpg");
+  }
+}
+
+.photos__text-br {
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }

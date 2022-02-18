@@ -9,7 +9,8 @@
 
   @media (min-width: @desktop-width) {
     width: 1200px;
-    margin-top: 60px;
+    margin-top: 59px;
+    margin-bottom: -28px;
   }
 }
 
@@ -214,7 +215,7 @@
   }
 }
 
-.contacts__map-wrapper::before {
+/*.contacts__map-wrapper::before {
   content: "";
   position: absolute;
   border: 8px solid #d22856;
@@ -232,6 +233,26 @@
     left: 592px;
     top: 274px;
   }
+}*/
+
+.contacts__map {
+  width: 320px;
+  height: 200px;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+    height: 374px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    height: 502px;
+  }
+}
+
+.contacts__map-wrapper iframe {
+  display: block;
+  border: 0;
 }
 
 .contacts__map-mobile {

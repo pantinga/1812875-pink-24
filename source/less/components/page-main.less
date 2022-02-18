@@ -4,10 +4,18 @@
   margin-top: -68px;
   height: 237px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/photo/mobile/back-mobile@2x.jpg");
+  }
+
   @media (min-width: @tablet-width) {
     background-image: url("../img/photo/tablet/back-tablet.jpg");
     height: 440px;
     margin-top: -110px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/photo/tablet/back-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
